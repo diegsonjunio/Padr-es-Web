@@ -1,0 +1,216 @@
+header > section {
+    display: flex;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#name {
+    flex: 2;
+    max-width: 70%;
+}
+
+#nameSearch {
+    border-radius: 2px;
+    width: 100%;
+    height: 5vh;
+    margin-top: 8px;
+}
+
+#language {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#condition {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#languageOptions {
+    display: flex;
+    align-items: center;
+    max-width: 180px;
+    min-height: 100%;
+    flex-wrap: wrap;
+    margin: 1.2% 0px;
+}
+
+section > div:not(:first-child) {
+    padding: 0 20px;
+}
+
+.result {
+    background-color: #ededed;
+}
+
+.countResults {
+    padding: 20px 30px 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    overflow: hidden;
+    max-width: 339.25px;
+    height: 114px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    flex:none;
+    order:0;
+    flex-grow: 1;
+    margin: 12px;
+    background-color: white;
+}
+
+.invisible {
+    display: none;
+}
+
+.profileDescription {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconLanguage {
+    height: 24px;
+    margin: 0px;
+}
+
+h3 {
+    color: #333333;
+    flex: none;
+    margin: 0px;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    box-shadow: 0 4px 4px white;
+    position: relative;
+    display:flex;
+    line-height: 180%;
+}
+
+.modal .languages {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+.modal > span {
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.modal > a {
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.profileDescriptionModal {
+    margin: 0px 10px;
+}
+
+.modal .languageDescription {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal .modal-experience {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.modal .language-name {
+    min-width: 120px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal .language-name > span {
+    padding: 0 20px;
+}
+
+.modal .profileDescriptionModal > div > h3 {
+    margin-top: 10px;
+}
+
+.fechar {
+    position: absolute;
+    font-size: 1.2em;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 50%;
+    border: none;
+    background: none;
+    color: #777777;
+    cursor: pointer;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal 0.3s;
+}
+
+*[name="age"]::after {
+    content: " Anos";
+}
